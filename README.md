@@ -2,6 +2,8 @@
 
 Makes fourier-based animated GIFs (similar to the ones seen in 3b1b's videos) from SVG files.
 
+![examples/fft.gif](examples/fft.gif)
+
 Note: only processes SVG PATHs, not POLYs!
 
 Warning: Can use a LOT of RAM!
