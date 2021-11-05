@@ -67,7 +67,7 @@ from gen_gif import gen_gif
                 default=500
             )
 def main(input_path, interpolation_factor, point_size, output, save_last, duration, image_size):
-    """Main method. Implements CLI for the program via click"""
+    """FFT animation generator by +ɛ"""
     points = read_image(input_path, interpolation_factor, True)
     coeffs = do_dft(points, True)
     gen_gif(coeffs, output, save_last, duration,
