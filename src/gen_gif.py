@@ -87,7 +87,7 @@ def _save_images(images, path, save_last, duration, progress):
     if progress:
         print("Saving...")
     images[0].save(f"{path}.gif", save_all=True, append_images=images[1:],
-                   optimize=True, duration=duration, loop=1)
+                   optimize=True, duration=[duration]*(len(images)-1)+[2**15], loop=1)
     if save_last:
         images[-1].save(f"{path}.png")
     if progress:
