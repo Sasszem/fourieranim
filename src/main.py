@@ -57,8 +57,9 @@ from gen_gif import gen_gif
                 default="nope"
             )
 @click.option("--duration",
-                help="Duration of a single frame in ms. Must be a multiple of 2.",
+                help="Duration of a single frame in ms. Must be a multiple of 20.",
                 default=20,
+                show_default=True,
                 type=int
             )
 @click.option("--image-size",
